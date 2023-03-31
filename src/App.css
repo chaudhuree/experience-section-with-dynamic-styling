@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.sec-before {
+  height: 80vh;
+}
+.sec-after {
+  height: 60vh;
+}
+.sec-before {
+  margin-bottom: 20px;
+}
+.sec-after {
+  margin-top: 20px;
+}
+.full-section {
+  display: flex;
+  position: relative;
+}
+.full-sec {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  top: 100px !important;
+  position: sticky;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 150px;
+  padding-left: 20px;
+}
+.nav a.active {
+  text-decoration: none;
+  position: relative;
+}
+.nav a.active::after {
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  width: 20px;
+  height: 2px;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #3e64ff;
+}
+
+/* Set the section elements to have some height and margin */
+section {
+  margin-left: 10px;
+  height: 60vh;
+  margin-top: 100px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  color: black;
+  height: 60vh;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.nav a.active {
+  padding-left: 10px;
+  border-bottom: 2px solid red !important;
+}
+
+.content {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.info {
+  display: grid;
+  place-items: center;
+  padding-top: 100px;
+}
